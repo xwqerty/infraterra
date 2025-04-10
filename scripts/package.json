@@ -1,0 +1,10 @@
+{
+    "name": "adscreen-platform-scripts",
+    "version": "1.0.0",
+    "description": "Utility scripts for AdScreen platform",
+    "private": true,
+    "dependencies": {
+      "aws-sdk": "^2.1015.0",
+      "uuid": "^8.3.2"
+    }
+  }

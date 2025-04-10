@@ -1,0 +1,10 @@
+{
+    "name": "ad-submission-handler",
+    "version": "1.0.0",
+    "description": "Lambda function to handle advertisement submissions",
+    "main": "index.js",
+    "dependencies": {
+      "aws-sdk": "^2.1015.0",
+      "uuid": "^8.3.2"
+    }
+  }

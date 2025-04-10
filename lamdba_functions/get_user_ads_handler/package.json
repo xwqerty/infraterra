@@ -1,0 +1,9 @@
+{
+    "name": "get-user-ads-handler",
+    "version": "1.0.0",
+    "description": "Lambda function to get user advertisements",
+    "main": "index.js",
+    "dependencies": {
+      "aws-sdk": "^2.1015.0"
+    }
+  }
