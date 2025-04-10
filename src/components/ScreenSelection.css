@@ -1,0 +1,211 @@
+.screen-selection-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .screen-selection-container h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .selection-description {
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .filter-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 300px;
+    font-size: 1rem;
+  }
+  
+  .filter-options {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .filter-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  
+  .filter-button:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .filter-button.active {
+    background-color: #3a86ff;
+    border-color: #3a86ff;
+    color: white;
+  }
+  
+  .screens-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .screen-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .screen-card.available {
+    cursor: pointer;
+  }
+  
+  .screen-card.available:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .screen-card.selected {
+    border: 2px solid #3a86ff;
+  }
+  
+  .screen-card.booked {
+    opacity: 0.7;
+  }
+  
+  .screen-card.maintenance {
+    opacity: 0.7;
+  }
+  
+  .screen-image {
+    position: relative;
+    height: 150px;
+  }
+  
+  .screen-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .screen-availability {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .available .screen-availability {
+    color: #2c8c2c;
+  }
+  
+  .booked .screen-availability {
+    color: #b7832f;
+  }
+  
+  .maintenance .screen-availability {
+    color: #e63946;
+  }
+  
+  .screen-info {
+    padding: 1.5rem;
+  }
+  
+  .screen-info h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+    color: #333;
+  }
+  
+  .screen-location {
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .screen-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+  
+  .detail {
+    font-size: 0.875rem;
+  }
+  
+  .detail-label {
+    font-weight: 500;
+    color: #555;
+    margin-right: 0.25rem;
+  }
+  
+  .selection-indicator {
+    padding: 1rem;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-top: 1px solid #eee;
+    font-weight: 500;
+  }
+  
+  .selected .selection-indicator {
+    background-color: #e1f7e1;
+    color: #2c8c2c;
+  }
+  
+  .selection-summary {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .selected-count {
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .total-cost {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .submit-selection {
+    background-color: #3a86ff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+  .submit-selection:hover {
+    background-color: #2667cc;
+  }
+  
+  .submit-selection:disabled {
+    background-color: #a0c4ff;
+    cursor: not-allowed;
+  }
